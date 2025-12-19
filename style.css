@@ -1,0 +1,1001 @@
+/* RESET & BASE STYLES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+/* TYPOGRAPHY */
+h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #1a237e; /* Deep Indigo */
+}
+
+h3 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1a237e;
+}
+
+p.subtitle {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #555;
+    font-size: 1.1em;
+}
+
+/* BUTTONS */
+.btn-primary, .btn-secondary, .btn-nav, .btn-tertiary {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Blue */
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: #1a237e;
+    border: 2px solid #1a237e;
+}
+
+.btn-secondary:hover {
+    background-color: #e0f7fa;
+}
+
+.btn-nav {
+    background-color: #ff6f00; /* Orange Accent */
+    color: white;
+    padding: 8px 15px;
+}
+
+.btn-tertiary {
+    background: none;
+    color: #007bff;
+    border: 1px solid #007bff;
+    margin-top: 30px;
+    padding: 10px 20px;
+}
+
+/* HEADER & NAVIGATION */
+.header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #1a237e;
+    font-size: 1.8em;
+}
+
+.nav a {
+    color: #333;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+}
+
+/* HERO SECTION (Homepage) */
+.hero-section {
+    background: linear-gradient(135deg, #1a237e 0%, #303f9f 100%); /* Deep Indigo Gradient */
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-section h2 {
+    color: white;
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.25em;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.cta-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.cta-form input {
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    width: 400px;
+    max-width: 100%;
+    font-size: 1em;
+}
+
+.cta-form .btn-primary {
+    font-size: 1.1em;
+}
+
+.scroll-link {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    margin-top: 30px;
+    display: block;
+    font-weight: 500;
+}
+
+/* FEATURES SECTION */
+.features-section {
+    background-color: white;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.feature-card {
+    flex: 1;
+    min-width: 250px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    background-color: #fff;
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card .icon {
+    font-size: 3em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.feature-card h4 {
+    color: #303f9f;
+    margin-bottom: 10px;
+}
+
+/* PACKAGES SECTION (Pricing.html) */
+.pricing-section {
+    background-color: #ffffff;
+    padding-top: 80px;
+}
+
+.pricing-table-container {
+    overflow-x: auto;
+    margin: 40px 0;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px; 
+}
+
+.pricing-table th, .pricing-table td {
+    padding: 20px 15px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.pricing-table th {
+    background-color: #e3f2fd;
+    color: #1a237e;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.pricing-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.pricing-table .price-row {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #ff6f00;
+}
+
+.pricing-table .highlight {
+    background-color: #fff3e0;
+}
+
+.pricing-table .btn-order {
+    padding: 8px 15px;
+    font-size: 0.9em;
+}
+
+.notes {
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 30px;
+}
+
+/* --- FOOTER LENGKAP --- */
+
+.footer-full {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #eaeaea;
+    padding: 60px 0 0;
+    text-align: center;
+}
+
+/* GRID */
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 35px;
+    padding-bottom: 40px;
+}
+
+/* KOLOM */
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* JUDUL */
+.footer-col h3 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+/* GARIS BAWAH JUDUL */
+.footer-col h3::after {
+    content: "";
+    width: 45px;
+    height: 3px;
+    background: #00c6ff;
+    display: block;
+    margin: 8px auto 0;
+}
+
+/* PARAGRAF */
+.footer-col p {
+    max-width: 260px;
+    margin-bottom: 10px;
+    line-height: 1.7;
+    color: #dcdcdc;
+}
+
+/* LOGO */
+.logo-footer {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #00c6ff;
+    margin-bottom: 10px;
+}
+
+/* SOCIAL ICON */
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: #00c6ff;
+    color: #000;
+}
+
+/* NAVIGATION */
+.footer-nav {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav li {
+    margin-bottom: 8px;
+}
+
+.footer-nav a {
+    color: #dcdcdc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #00c6ff;
+}
+
+/* BUTTON */
+.btn-map {
+    margin-top: 12px;
+    padding: 8px 18px;
+    background: #00c6ff;
+    color: #000;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-map:hover {
+    background: #fff;
+}
+
+/* COPYRIGHT */
+.footer-bottom {
+    background: rgba(0,0,0,0.45);
+    padding: 15px 0;
+    font-size: 13px;
+    color: #bbb;
+}
+
+
+
+
+/* MEDIA QUERIES (RESPONSIVE DESIGN) */
+
+/* Navigasi Mobile Toggle */
+.menu-toggle {
+    display: none; /* Sembunyikan di desktop */
+    background: none;
+    border: none;
+    color: #1a237e;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+    /* Navbar Responsif */
+    .header .container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .menu-toggle {
+        display: block; 
+    }
+
+    .nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .nav a {
+        margin: 10px 0;
+        padding: 8px 0;
+        border-bottom: 1px solid #eee;
+        width: 100%;
+    }
+    
+    .btn-nav {
+        margin-top: 10px;
+        background-color: #007bff;
+        color: white;
+    }
+    
+    /* Footer Responsif */
+    .footer-grid {
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    .footer-col.logo-col {
+        grid-column: span 2; 
+        text-align: center;
+    }
+    
+    .footer-col.logo-col p {
+        max-width: 80%;
+        margin: 10px auto;
+    }
+
+    .social-links {
+        text-align: center;
+    }
+    
+    /* General */
+    .feature-grid {
+        flex-direction: column;
+    }
+    
+    .cta-form {
+        flex-direction: column;
+    }
+
+    .cta-form input {
+        width: 100%;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section h2 {
+        font-size: 2em;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr; 
+        text-align: center;
+    }
+    
+    .footer-col.logo-col {
+        grid-column: span 1;
+    }
+    
+    .footer-col.logo-col p {
+        max-width: 100%;
+    }
+    
+    .footer-col i {
+        /* Sembunyikan ikon di mobile agar teks lebih rapih */
+        display: inline-block; 
+    }
+    
+    .contact-info .detail {
+        justify-content: center;
+    }
+}
+/* Tambahkan atau Ganti kode ini di style.css */
+
+.hero-section {
+    padding: 120px 0; /* Tambah padding atas/bawah */
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+
+    /* 1. Atur Gambar Latar */
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    background-color: #1a237e; /* Fallback color */
+    z-index: 1; 
+}
+
+/* 2. Tambahkan Overlay Gelap */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Warna overlay: deep indigo gelap, opacity 75% */
+    background: rgba(26, 35, 126, 0.75); 
+    z-index: -1;
+}
+
+.hero-section h2 {
+    font-size: 3.5em;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    color: white; /* Pastikan teks judul berwarna putih */
+}
+
+.hero-section p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Penyesuaian Responsif */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 80px 0;
+    }
+    .hero-section h2 {
+        font-size: 2.5em;
+    }
+}
+/* ===================================== */
+/* 8. Photo Gallery Section (BARU) */
+/* ===================================== */
+.photo-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.photo-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.photo-card:hover {
+    transform: translateY(-5px);
+}
+
+.photo-card .card-image {
+    width: 100%;
+    height: 200px; /* Tinggi tetap untuk konsistensi */
+    object-fit: cover; /* Memastikan gambar mengisi area tanpa terdistorsi */
+    display: block;
+}
+
+.photo-card h4 {
+    font-size: 1.2em;
+    color: #1a237e;
+    padding: 15px 15px 5px;
+    font-weight: 600;
+}
+
+.photo-card p {
+    font-size: 0.9em;
+    color: #555;
+    padding: 0 15px 20px;
+}
+
+/* Penyesuaian Responsif */
+@media (max-width: 768px) {
+    .photo-card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Tambahkan kode ini ke bagian BUTTONS (2.) di style.css */
+
+.btn-tertiary-hero {
+    /* Mirip tombol sekunder, tapi disesuaikan untuk latar Hero yang gelap */
+    background-color: transparent;
+    color: white; /* Teks Putih */
+    padding: 10px 25px;
+    border: 2px solid rgba(255, 255, 255, 0.6); /* Border Putih Transparan */
+    border-radius: 30px; /* Bentuk lebih membulat */
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    display: inline-block; /* Agar padding bekerja */
+    transition: all 0.3s;
+}
+
+.btn-tertiary-hero:hover {
+    background-color: #ff6f00; /* Warna Oranye saat hover */
+    border-color: #ff6f00; /* Border juga Oranye */
+    color: white;
+}
+
+/* =========================================
+   OVERRIDE WARNA SAJA (TANPA UBAH LAYOUT)
+========================================= */
+
+/* WARNA DASAR */
+body {
+    background-color: #f5f7fb;
+    color: #2c2c2c;
+}
+
+/* JUDUL */
+h2, h3 {
+    color: #0d47a1;
+}
+
+/* HEADER */
+.logo {
+    color: #0d47a1;/* =========================================
+    OVERRIDE WARNA SAJA (TANPA UBAH LAYOUT)
+ ========================================= */
+ 
+ /* WARNA DASAR */
+ body {
+     background-color: #f5f7fb;
+     color: #2c2c2c;
+ }
+ 
+ /* JUDUL */
+ h2, h3 {
+     color: #0d47a1;
+ }
+ 
+ /* HEADER */
+ .logo {
+     color: #0d47a1;
+ }
+ 
+ .nav a {
+     color: #2c2c2c;
+ }
+ 
+ .nav a:hover {
+     color: #1565c0;
+ }
+ 
+ /* BUTTON */
+ .btn-primary {
+     background-color: #1565c0;
+ }
+ 
+ .btn-primary:hover {
+     background-color: #0d47a1;
+ }
+ 
+ .btn-secondary {
+     color: #0d47a1;
+     border-color: #0d47a1;
+ }
+ 
+ .btn-nav {
+     background-color: #ff9800;
+ }
+ 
+ .btn-nav:hover {
+     background-color: #fb8c00;
+ }
+ 
+ .btn-tertiary {
+     color: #1565c0;
+     border-color: #1565c0;
+ }
+ 
+ /* HERO */
+ .hero-section {
+     background: linear-gradient(
+         135deg,
+         #0d47a1,
+         #1565c0
+     );
+ }
+ 
+ .scroll-link {
+     color: rgba(255,255,255,0.85);
+ }
+ 
+ /* FEATURE */
+ .feature-card h4 {
+     color: #0d47a1;
+ }
+ 
+ .feature-card .icon {
+     color: #00bcd4;
+ }
+ 
+ /* PRICING */
+ .pricing-table th {
+     background-color: #e3f2fd;
+     color: #0d47a1;
+ }
+ 
+ .pricing-table .price-row {
+     color: #ff9800;
+ }
+ 
+ .pricing-table .highlight {
+     background-color: #fff8e1;
+ }
+ 
+ /* FOOTER */
+ .footer-full {
+     background: linear-gradient(135deg, #0b1c2d, #0d47a1);
+ }
+ 
+ .footer-col h3::after {
+     background: #00bcd4;
+ }
+ /* =========================================
+   OVERRIDE WARNA SAJA (TANPA UBAH LAYOUT)
+========================================= */
+
+/* WARNA DASAR */
+body {
+    background-color: #f5f7fb;
+    color: #2c2c2c;
+}
+
+/* JUDUL */
+h2, h3 {
+    color: #0d47a1;
+}
+
+/* HEADER */
+.logo {
+    color: #0d47a1;
+}
+
+.nav a {
+    color: #2c2c2c;
+}
+
+.nav a:hover {
+    color: #1565c0;
+}
+
+/* BUTTON */
+.btn-primary {
+    background-color: #1565c0;
+}
+
+.btn-primary:hover {
+    background-color: #0d47a1;
+}
+
+.btn-secondary {
+    color: #0d47a1;
+    border-color: #0d47a1;
+}
+
+.btn-nav {
+    background-color: #ff9800;
+}
+
+.btn-nav:hover {
+    background-color: #fb8c00;
+}
+
+.btn-tertiary {
+    color: #1565c0;
+    border-color: #1565c0;
+}
+
+/* HERO */
+.hero-section {
+    background: linear-gradient(
+        135deg,
+        #0d47a1,
+        #1565c0
+    );
+}
+
+.scroll-link {
+    color: rgba(255,255,255,0.85);
+}
+
+/* FEATURE */
+.feature-card h4 {
+    color: #0d47a1;
+}
+
+.feature-card .icon {
+    color: #00bcd4;
+}
+
+/* PRICING */
+.pricing-table th {
+    background-color: #e3f2fd;
+    color: #0d47a1;
+}
+
+.pricing-table .price-row {
+    color: #ff9800;
+}
+
+.pricing-table .highlight {
+    background-color: #fff8e1;
+}
+
+/* FOOTER */
+.footer-full {
+    background: linear-gradient(135deg, #0b1c2d, #0d47a1);
+}
+
+.footer-col h3::after {
+    background: #00bcd4;
+}
+
+.logo-footer {
+    color: #00bcd4;
+}
+
+.footer-nav a:hover {
+    color: #00bcd4;
+}
+
+.social-links a:hover {
+    background: #00bcd4;
+    color: #000;
+}
+
+.btn-map {
+    background: #ff9800;
+}
+
+.btn-map:hover {
+    background: #ffc107;
+}
+
+.footer-bottom {
+    background: rgba(0,0,0,0.5);
+}
+
+ .logo-footer {
+     color: #00bcd4;
+ }
+ 
+ .footer-nav a:hover {
+     color: #00bcd4;
+ }
+ 
+ .social-links a:hover {
+     background: #00bcd4;
+     color: #000;
+ }
+ 
+ .btn-map {
+     background: #ff9800;
+ }
+ 
+ .btn-map:hover {
+     background: #ffc107;
+ }
+ 
+ .footer-bottom {
+     background: rgba(0,0,0,0.5);
+ }
+ 
+}
+
+.nav a {
+    color: #2c2c2c;
+}
+
+.nav a:hover {
+    color: #1565c0;
+}
+
+/* BUTTON */
+.btn-primary {
+    background-color: #1565c0;
+}
+
+.btn-primary:hover {
+    background-color: #0d47a1;
+}
+
+.btn-secondary {
+    color: #0d47a1;
+    border-color: #0d47a1;
+}
+
+.btn-nav {
+    background-color: #ff9800;
+}
+
+.btn-nav:hover {
+    background-color: #fb8c00;
+}
+
+.btn-tertiary {
+    color: #1565c0;
+    border-color: #1565c0;
+}
+
+/* HERO */
+.hero-section {
+    background: linear-gradient(
+        135deg,
+        #0d47a1,
+        #1565c0
+    );
+}
+
+.scroll-link {
+    color: rgba(255,255,255,0.85);
+}
+
+/* FEATURE */
+.feature-card h4 {
+    color: #0d47a1;
+}
+
+.feature-card .icon {
+    color: #00bcd4;
+}
+
+/* PRICING */
+.pricing-table th {
+    background-color: #e3f2fd;
+    color: #0d47a1;
+}
+
+.pricing-table .price-row {
+    color: #ff9800;
+}
+
+.pricing-table .highlight {
+    background-color: #fff8e1;
+}
+
+/* FOOTER */
+.footer-full {
+    background: linear-gradient(135deg, #0b1c2d, #0d47a1);
+}
+
+.footer-col h3::after {
+    background: #00bcd4;
+}
+
+.logo-footer {
+    color: #00bcd4;
+}
+
+.footer-nav a:hover {
+    color: #00bcd4;
+}
+
+.social-links a:hover {
+    background: #00bcd4;
+    color: #000;
+}
+
+.btn-map {
+    background: #ff9800;
+}
+
+.btn-map:hover {
+    background: #ffc107;
+}
+
+.footer-bottom {
+    background: rgba(0,0,0,0.5);
+}
